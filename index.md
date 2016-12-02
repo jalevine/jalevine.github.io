@@ -59,6 +59,14 @@ important details, please
 better) fork [the GitHub repository for this website](http://github.com/kbroman/simple_site),
 make modifications, and submit a pull request.
 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 ---
 
 The source for this minimal tutorial is [on github](http://github.com/kbroman/simple_site).
